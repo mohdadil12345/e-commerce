@@ -1,0 +1,24 @@
+
+<h1 style=" color: linear-gradient(90deg, #232526 0, #414345 51%, #232526); text-align: center;">Registration Form</h1>
+
+<form (ngSubmit) = "handle_login()" class="form1">
+    <h3 >Login</h3>
+
+
+    <label htmlFor="">Email</label>
+    <input [(ngModel)] = "email" name="email" type="email" placeholder="email" required />
+
+    <label htmlFor="">Password</label>
+    <input [(ngModel)] = "password" name="password" placeholder="Password" required />
+
+
+    <button type="submit" class="signup_btn">
+       Login
+    </button>
+
+    <div>
+      <button class="google">Google</button>
+      <button class="facebook">Facebook</button>
+    </div>
+  </form>
+
