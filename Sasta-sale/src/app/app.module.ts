@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './container/header/header.component';
 import { ProductlistComponent } from './container/productlist/productlist.component';
 import { ProductItemsComponent } from './container/productlist/product-items/product-items.component';
+import { TopHeaderComponent } from './top-header/top-header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     ProductlistComponent,
-    ProductItemsComponent
+    ProductItemsComponent,
+    TopHeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

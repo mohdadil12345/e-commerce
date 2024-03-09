@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ProductTypes } from '../../../models/ProductTypes';
 
 @Component({
   selector: 'app-product-items',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './product-items.component.css'
 })
 export class ProductItemsComponent {
+
+
+  @Input()
+  prod: ProductTypes = new ProductTypes(); 
 
 }

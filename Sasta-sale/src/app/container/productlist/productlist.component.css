@@ -1,0 +1,15 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
