@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ProductlistComponent } from './container/productlist/productlist.component';
 import { ProductItemsComponent } from './container/productlist/product-items/product-items.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,11 +16,14 @@ import { TopHeaderComponent } from './top-header/top-header.component';
     AppComponent,
     ProductlistComponent,
     ProductItemsComponent,
-    TopHeaderComponent
+    TopHeaderComponent,
+    SignupPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
    
   ],
   providers: [],
