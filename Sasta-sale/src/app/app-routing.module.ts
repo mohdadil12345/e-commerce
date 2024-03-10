@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductlistComponent } from './container/productlist/productlist.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ProdDetailsComponent } from './containerr/prod-details/prod-details.component';
+import { ContainerrComponent } from './containerr/containerr.component';
 
 const routes: Routes = [
-  {path : "", component: ProductlistComponent},
+  {path : "", component: HomePageComponent},
   {path : "login", component: LoginPageComponent},
-  {path : "signup", component: SignupPageComponent}
+  {path : "signup", component: SignupPageComponent},
+  {path : "Details/id", component: ProdDetailsComponent},
+  {path : "Products", component: ContainerrComponent},
 ];
 
 @NgModule({

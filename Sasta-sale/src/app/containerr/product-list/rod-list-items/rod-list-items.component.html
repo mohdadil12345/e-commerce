@@ -1,0 +1,19 @@
+
+
+<div class="proitems">
+    <h2 class="name">{{prod.title}}</h2>
+    <img [src]="prod.image" alt="">
+   <div class="pri_rat">
+    <p>${{prod.price}}</p>
+
+    <p [ngStyle]="{background: prod.rating > 4 ? 'green' :  'red'}"  class="rate">{{prod.rating}}</p>
+      
+  </div>
+  <p>Category: {{prod.category}}</p>
+
+ <div class="cart_btn">
+  <button (click)="addtocart()" >Add To Cart</button>
+  <button (click)="goto_details(prod.id)" >Go To Details</button>
+ </div>
+  </div>
+
