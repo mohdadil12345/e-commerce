@@ -24,20 +24,12 @@ export class ProductListComponent {
   
   fetchingdata () {
      return this.http.get(this.api).subscribe(data => {
-      console.log(data)
+      // console.log(data)
       this.products = data 
      })
   }
   
   
-  // detials_data : any
-  
-  // details
-  // handle_click(ele: any) {
-  //   console.log("elee", ele)
-  //   this.detials_data = ele
-  //   alert("Welcome To Details Page")
-  //   this.router.navigate(['Details'])
-  // }
+
   
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
 
 @Component({
   selector: 'app-prod-details',
@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 
 
-export class ProdDetailsComponent {
+export class ProdDetailsComponent   {
   
+  product : any;
+
+
+
      
 }

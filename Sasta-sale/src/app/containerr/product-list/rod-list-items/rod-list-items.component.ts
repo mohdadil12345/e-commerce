@@ -26,9 +26,8 @@ export class RodListItemsComponent {
 
   goto_details(id:number){
     alert("details page")
-    // console.log("adil", this.prod)
-    // console.log(id)
-    this.router.navigate(['Details/id'])
+
+    this.router.navigate(['Details'], {state : {ProductTypes : this.prod}})
   }
 
 
