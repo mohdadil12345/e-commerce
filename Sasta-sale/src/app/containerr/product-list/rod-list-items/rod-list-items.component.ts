@@ -9,7 +9,11 @@ import { Router } from '@angular/router';
 })
 export class RodListItemsComponent {
 
-  constructor(private router : Router) {}
+  constructor(private router : Router) {
+
+  }
+
+  
 
   @Input()
   prod: ProductTypes = new ProductTypes(); 
@@ -17,17 +21,40 @@ export class RodListItemsComponent {
 
 
 
-  addtocart() {
-    alert("added to cart")
+  addtocart(prod: any) {
+    alert("Products added to cart")
+    // console.log(prod)
+
+    let lsdata : any =  JSON.parse(localStorage.getItem("cart_data") || '[]')
+
+    if(lsdata) {
+       
+      lsdata.push(prod)
+      
+      localStorage.setItem("cart_data", JSON.stringify(lsdata))
+
+    }else{
+
+      localStorage.setItem("cart_data", JSON.stringify([prod]))
+    }
 
   }
 
 
 
-  goto_details(id:number){
-    alert("details page")
+  goto_details(prod: any, id:any){
+    alert("Welcome to Details Page")
 
-    this.router.navigate(['Details'], {state : {ProductTypes : this.prod}})
+    console.log("jjj", prod)
+
+   localStorage.setItem("details_data", JSON.stringify(prod))
+
+
+    // this.router.navigate(['Details/:id'], id)
+    this.router.navigate(['details/:id', { id: prod.id }]);
+
+
+       
   }
 
 
