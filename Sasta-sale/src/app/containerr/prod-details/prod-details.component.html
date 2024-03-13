@@ -1,12 +1,17 @@
 <div class="prod_details">
-   <h1> {{prod_detail.title}} </h1> 
-   <img src= {{prod_detail.image}} alt="">
-   <p>price : {{prod_detail.price}} </p>
-   <p>Rating : {{prod_detail.rating}} </p>
-   <p>category : {{prod_detail.category}} </p>
-   <p>description : {{prod_detail.description}} </p>
-   <p>numVotes : {{prod_detail.numVotes}}</p>
-   <button>Add To Cart</button>
-</div>
+  <h1>{{details_item.title}}</h1>
 
-<h1>idddd   {{id}} </h1>
+  <img [src]="details_item.image " alt="" />
+
+  <p>price : {{ details_item.price }}</p>
+
+  <p>Rating : {{ details_item.rating }}</p>
+
+  <p>category : {{ details_item.category }}</p>
+
+  <p>description : {{ details_item.description }}</p>
+
+  <p>numVotes : {{ details_item.numVotes }}</p>
+
+  <button class="cart_btn">Add To Cart</button>
+</div>

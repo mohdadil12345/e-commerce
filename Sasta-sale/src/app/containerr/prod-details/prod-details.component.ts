@@ -1,4 +1,5 @@
-import { Component  } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,29 +9,29 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 
-export class ProdDetailsComponent   {
+export class ProdDetailsComponent implements OnInit   {
   
-  prod_detail : any;
+  api =  "https://e-commerce-backend-crh2.onrender.com/products"
 
   id : any =  0
   
-  constructor(private route : ActivatedRoute) {
-    this.id = this.route.snapshot.paramMap.get("id")
-
-   const  lsdata = localStorage.getItem("details_data")
-   
-
-     if(lsdata) {
-       this.prod_detail = JSON.parse(lsdata)
-       console.log("details", this.prod_detail)
-     }else{
-       alert("no data in local storage")
-     }
+  constructor(private route : ActivatedRoute , private  http : HttpClient) {}
 
 
+         details_item : any
+
+        fetchDataByID () {
+          return this.http.get(`${this.api}/${this.id}`).subscribe(data => {
+           // console.log(data)
+           this.details_item = data 
+           console.log("details", this.details_item);
+          })
        }
+       
+        ngOnInit() : void{
+          this.id = this.route.snapshot.paramMap.get("id");
+          this.fetchDataByID();
+         }
 
-
-
-     
+   
 }

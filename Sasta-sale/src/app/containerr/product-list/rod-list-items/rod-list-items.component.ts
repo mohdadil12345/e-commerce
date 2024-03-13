@@ -42,16 +42,17 @@ export class RodListItemsComponent {
 
 
 
-  goto_details(prod: any, id:any){
+  goto_details(prod: any){
     alert("Welcome to Details Page")
 
-    console.log("jjj", prod)
+    // console.log("jjj", prod)
 
-   localStorage.setItem("details_data", JSON.stringify(prod))
+  //  localStorage.setItem("details_data", JSON.stringify(prod))
 
 
     // this.router.navigate(['Details/:id'], id)
-    this.router.navigate(['details/:id', { id: prod.id }]);
+    // this.router.navigate(['details/:id', { id: prod.id }]);
+    this.router.navigate(['/details', prod.id]);
 
 
        
