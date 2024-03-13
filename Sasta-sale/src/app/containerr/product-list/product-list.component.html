@@ -3,11 +3,9 @@
 
 
 
-
-    <!-- <app-product-items  *ngFor="let ele of products" [prod] = "ele"  (click) = "handle_click(ele)"  ></app-product-items> -->
+  <app-loader *ngIf="loading" ></app-loader>
   
-      <!-- <app-rod-list-items  *ngFor="let ele of products" [prod] = "ele"  (click) = "handle_click(ele)"  ></app-rod-list-items> -->
-      <app-rod-list-items  *ngFor="let ele of products" [prod] = "ele"  ></app-rod-list-items>
+      <app-rod-list-items   *ngFor="let ele of products" [prod] = "ele"  ></app-rod-list-items>
 
 
   </div>

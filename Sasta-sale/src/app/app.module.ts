@@ -12,6 +12,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { ProdDetailsComponent } from './containerr/prod-details/prod-details.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -25,7 +27,9 @@ import { ProdDetailsComponent } from './containerr/prod-details/prod-details.com
     ContainerrComponent,
     ProductListComponent,
     RodListItemsComponent,
-    ProdDetailsComponent
+    ProdDetailsComponent,
+    CartPageComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

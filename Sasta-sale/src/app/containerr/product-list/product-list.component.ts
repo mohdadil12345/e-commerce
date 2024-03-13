@@ -17,6 +17,7 @@ export class ProductListComponent {
   
   
   products: any = []; 
+  loading =  true
   
   ngOnInit(): void {
     this.fetchingdata();
@@ -26,6 +27,7 @@ export class ProductListComponent {
      return this.http.get(this.api).subscribe(data => {
       // console.log(data)
       this.products = data 
+      this.loading = false
      })
   }
   

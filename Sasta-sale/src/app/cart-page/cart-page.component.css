@@ -1,0 +1,39 @@
+
+
+*{
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cartPage{
+    padding: 20px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartItem{
+    border: 1px solid rgb(14, 104, 114);
+}
+
+.cartItem img{
+    width: 400px;
+}
+
+.horzontkl {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1{
+    border: 1px solid red;
+
+}
+.box2{
+    border: 1px solid blue;
+    height: 500px;
+}
