@@ -15,11 +15,9 @@ export class LoginPageComponent {
   }
   
   
-  
   handle_login() {
     // console.log(this.email, this.password)
     
-
     let lsdata : any[] = JSON.parse(localStorage.getItem("register_user") || "[]")
     
     if(lsdata) {
