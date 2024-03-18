@@ -7,13 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { RodListItemsComponent } from './containerr/product-list/rod-list-items/rod-list-items.component';
 import { ProductListComponent } from './containerr/product-list/product-list.component';
 import { ContainerrComponent } from './containerr/containerr.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { ProdDetailsComponent } from './containerr/prod-details/prod-details.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { LoaderComponent } from './loader/loader.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -23,13 +24,15 @@ import { LoaderComponent } from './loader/loader.component';
     TopHeaderComponent,
     SignupPageComponent,
     LoginPageComponent,
-    HomePageComponent,
     ContainerrComponent,
     ProductListComponent,
     RodListItemsComponent,
-    ProdDetailsComponent,
     CartPageComponent,
-    LoaderComponent
+    LoaderComponent,
+    ProdDetailsComponent,
+    HomePageComponent,
+    FooterComponent
+
   ],
   imports: [
     BrowserModule,

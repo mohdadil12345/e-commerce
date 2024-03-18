@@ -1,0 +1,44 @@
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid; 
+   grid-template-columns:repeat(4, 23%);
+   gap: 10px;
+   justify-content: center;
+   padding: 20px;
+}
+
+.prod_items{
+   border-radius: 8px;
+   border: 0.5px solid grey;
+   position: relative;
+   padding: 10px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+ 
+}
+h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+
+
+img{
+    width: 200px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 10px;
+}

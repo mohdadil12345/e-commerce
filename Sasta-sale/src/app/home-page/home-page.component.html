@@ -1,2 +1,14 @@
 
-<h1>Work in progress!!!!</h1>
+
+
+<div class="container">
+
+    
+  <div *ngFor="let product of products" class="prod_items">
+    <img [src]="product.image" alt="" />
+    <h3>{{ product.title }}</h3>
+    <p>Price: {{ product.price }}</p>
+  </div>
+
+
+</div>
