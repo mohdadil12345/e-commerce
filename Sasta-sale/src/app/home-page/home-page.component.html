@@ -4,10 +4,34 @@
 <div class="container">
 
     
-  <div *ngFor="let product of products" class="prod_items">
-    <img [src]="product.image" alt="" />
-    <h3>{{ product.title }}</h3>
-    <p>Price: {{ product.price }}</p>
+  <div *ngFor="let prod of products" class="prod_items">
+   
+
+    <div class="info">
+
+
+
+      <img [src]="prod.image" alt="" />
+      <h4 class="heading">{{ prod.title }}</h4>
+    </div>
+
+
+    
+    <div *ngIf="prod.discount" class="label">
+      {{(prod.discount / prod.price*100).toFixed()}}%off
+    </div>
+      <div class="prirate">
+        <p>price: {{ prod.price }}</p>
+        
+  
+        <h5 [ngStyle]= "{background :prod.rating.rate > 4 ? 'green' : 'red'}">{{ prod.rating.rate }}</h5>
+        
+      </div>
+      <div>category:{{ prod.category }}</div>   
+      <p [ngStyle]="{fontWeight:'bold', color : prod.in_inventory ? 'green' : 'red'}" >{{prod.in_inventory ? "Available in stock" : "Not available in stock" }}</p>
+
+
+
   </div>
 
 

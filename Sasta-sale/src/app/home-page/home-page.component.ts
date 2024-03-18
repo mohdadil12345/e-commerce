@@ -293,21 +293,12 @@ export class HomePageComponent {
   ]
 
 
-
-  // slides: any[] = [
-  //   { imageUrl: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-  //   { imageUrl: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg', alt: '' },
-   
-  // ];
-
+  totalprodCount : number = this.products.length
+  totalproducinStock  = this.products.filter(ele => ele.in_inventory == true).length
+  prodssoutofstoc = this.products.filter(ele => ele.in_inventory == false).length
+  
+  
+  
 
 
 
