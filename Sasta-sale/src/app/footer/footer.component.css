@@ -13,10 +13,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: linear-gradient(90deg, #3d3f41 0, #414345 51%, #232526);
     padding: 20px 10px;
-    color: #ccc;
+    border: 1px solid rgb(204, 204, 204);
+    color:     rgb(22, 22, 57);
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 4px;
+    
 
 }
 
