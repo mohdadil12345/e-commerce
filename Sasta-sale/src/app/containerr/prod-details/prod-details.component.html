@@ -1,17 +1,26 @@
 <div class="prod_details">
-  <h1>{{details_item.title}}</h1>
 
-  <img [src]="details_item.image " alt="" />
 
-  <p>price : {{ details_item.price }}</p>
+  <div class="box1">
+    <img [src]="details_item.image" alt="" />
+  </div>
 
-  <p>Rating : {{ details_item.rating }}</p>
+  <div class="box2">
+    <h1>{{ details_item.title }}</h1>
 
-  <p>category : {{ details_item.category }}</p>
+    <p>price : {{ details_item.price }}</p>
 
-  <p>description : {{ details_item.description }}</p>
+    <p>Rating : {{ details_item.rating }}</p>
 
-  <p>numVotes : {{ details_item.numVotes }}</p>
+    <p>category : {{ details_item.category }}</p>
 
-  <button class="cart_btn">Add To Cart</button>
+    <p>description : {{ details_item.description }}</p>
+
+    <p>numVotes : {{ details_item.numVotes }}</p>
+
+    <button class="cart_btn">Payment</button>
+  </div>
+
+
+
 </div>
