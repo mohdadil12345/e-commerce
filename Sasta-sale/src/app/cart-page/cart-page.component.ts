@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductTypes } from '../models/ProductTypes';
 
+
 @Component({
   selector: 'app-cart-page',
   templateUrl: './cart-page.component.html',
@@ -9,6 +10,7 @@ import { ProductTypes } from '../models/ProductTypes';
 export class CartPageComponent {
 
    cartData : ProductTypes[] = []
+
 
   constructor() {
     const lsdata = JSON.parse(localStorage.getItem("cart_data") || "[]")
@@ -21,19 +23,16 @@ export class CartPageComponent {
 
   }
 
+  handle_delet(id : number) {
 
+    let delfil = this.cartData.filter((ele)=> ele.id !== id)
+    this.cartData = delfil
+    localStorage.setItem("cart_data", JSON.stringify(delfil))
 
+    alert("Item deleted Successfully")
 
+  }
 
-  //  const  lsdata = localStorage.getItem("details_data")
-   
-
-  //    if(lsdata) {
-  //      this.prod_detail = JSON.parse(lsdata)
-  //      console.log("details", this.prod_detail)
-  //    }else{
-  //      alert("no data in local storage")
-  //    }
 
 
 }

@@ -1,4 +1,11 @@
-<div class="prod_details">
+
+
+<ng-template #template>
+<app-loader ></app-loader>
+
+</ng-template>
+
+<div  *ngIf="!loading; else template" class="prod_details">
 
 
   <div class="box1">

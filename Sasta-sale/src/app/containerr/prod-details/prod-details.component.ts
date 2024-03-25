@@ -14,6 +14,7 @@ export class ProdDetailsComponent implements OnInit   {
   api =  "https://e-commerce-backend-crh2.onrender.com/products"
 
   id : any =  0
+  loading : boolean =  true
   
   constructor(private route : ActivatedRoute , private  http : HttpClient) {}
 
@@ -25,6 +26,7 @@ export class ProdDetailsComponent implements OnInit   {
            // console.log(data)
            this.details_item = data 
            console.log("details", this.details_item);
+           this.loading  = false
           })
        }
        

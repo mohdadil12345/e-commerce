@@ -1,30 +1,27 @@
-
-
-
 <div class="cartPage">
 
+  <div *ngFor="let ele of cartData" class="cartItem">
 
-<div *ngFor="let ele of cartData" class="cartItem">
+    <div class="horzontkl">
+      <div class="box1">
+        <h2>{{ ele.title }}</h2>
+        <img [src]="ele.image" alt="" />
+      </div>
 
-
-   
-<div class="horzontkl">
-    <div class="box1">
-        <h2>{{ele.title}}</h2>
-        <img [src]="ele.image" alt="">
-    </div>
-      
-     <div class="box2">
-        <p>category: {{ele.category}}</p>
-        <p>description : {{ele.description}}</p>
-        <p>price : {{ele.price}}</p>
-        <p>votes : {{ele.numVotes}}</p>
+      <div class="box2">
+        <p>
+          category: <strong>{{ ele.category }}</strong>
+        </p>
+        <p>description : {{ ele.description }}</p>
+        <p>
+          price : <strong>{{ ele.price }}</strong>
+        </p>
+        <p>
+          votes : <strong>{{ ele.numVotes }}</strong>
+        </p>
+        <button (click)="handle_delet(ele.id)">DELETE</button>
         <button>Payment</button>
-     </div>
-</div>
-
-
-</div>
-
-
+      </div>
+    </div>
+  </div>
 </div>

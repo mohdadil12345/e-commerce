@@ -15,6 +15,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { LoaderComponent } from './loader/loader.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { ToastModule } from 'primeng/toast';
 
 
 
@@ -31,14 +32,15 @@ import { FooterComponent } from './footer/footer.component';
     LoaderComponent,
     ProdDetailsComponent,
     HomePageComponent,
-    FooterComponent
+    FooterComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule
    
   ],
   providers: [],
