@@ -1,7 +1,45 @@
 
 
+<div class="carousel">
+  <p-carousel [value]="health_concerns"    [numVisible]="5" [numScroll]="1" >
+    <ng-template let-product pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="mb-3">
+                    <img [src]="product.img" [alt]="product.name" class="product-image" />
+                </div>
+                <div>
+                    <h4>{{ product.name }}</h4>
+               
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+</div>
+
+<div class="carouse2">
+  <p-carousel [value]="Featured_Brands"    [numVisible]="5" [numScroll]="1" >
+    <ng-template let-product pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="mb-3">
+                    <img [src]="product.img" [alt]="product.name" class="product-image" />
+                </div>
+                <div>
+                    <h4 >{{ product.name }}</h4>
+                
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+</div>
+
 
 <div class="container">
+
+
 
     
   <div *ngFor="let prod of products" class="prod_items">

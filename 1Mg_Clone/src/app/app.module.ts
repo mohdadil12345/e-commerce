@@ -16,6 +16,8 @@ import { LoaderComponent } from './loader/loader.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { ToastModule } from 'primeng/toast';
+import { CarouselModule } from 'primeng/carousel';
+
 
 
 
@@ -40,7 +42,9 @@ import { ToastModule } from 'primeng/toast';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ToastModule
+    ToastModule,
+    CarouselModule
+    
    
   ],
   providers: [],

@@ -17,36 +17,44 @@
 .cartItem{
     /* border: 1px solid rgb(14, 104, 114); */
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    justify-content: center;
+    display: flex;
+
 
 }
 
 .cartItem img{
-    width: 300px;
-    height: 300px;
     border-radius: 8px;
+    height: 150px;
 }
 
 .horzontkl {
     display: flex;
     gap: 20px;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 200px;
+
 }
 
 .box1{
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     border-radius: 4px;
+    width: 400px;
 }
 .box2{
-    border: 1px solid rgb(146, 80, 80);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     border-radius: 4px;
+    width: 400px;
 }
 
 
 h2{
     color:  rgb(22, 22, 57);
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
 }
 
 

@@ -15,7 +15,7 @@
    gap: 10px;
    justify-content: center;
    padding: 20px;
-   margin-top: 70px;
+   margin-top: 10px;
 }
 
 .prod_items{
@@ -71,3 +71,40 @@ img{
     display: flex;
     gap: 10px;
 }
+
+
+
+
+.carousel{
+    margin-top: 70px;
+}
+
+/* Override the indicator styles */
+.carousel .p-carousel-indicators {
+    background-color: red !important;
+    display: none !important;
+  }
+  
+  /* Override the dot styles */
+  .carousel .p-carousel-indicators .p-carousel-indicators-item {
+    background-color: red !important;
+    display: none !important;
+  }
+  
+
+  p-carousel-dot-item{
+    background-color: red;
+  }
+  p-carousel-dots-container{
+    background-color: red;
+  }
+  p-carousel-content{
+    background-color: red;
+  }
+
+  .product-item-content{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
