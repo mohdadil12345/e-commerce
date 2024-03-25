@@ -1,7 +1,7 @@
 
 
 *{
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
@@ -15,10 +15,13 @@
 }
 
 .cartItem{
-    /* border: 1px solid rgb(14, 104, 114); */
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     justify-content: center;
     display: flex;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 8px;
+
+
 
 
 }
@@ -26,6 +29,7 @@
 .cartItem img{
     border-radius: 8px;
     height: 150px;
+    width: 100px;
 }
 
 .horzontkl {
@@ -33,6 +37,7 @@
     gap: 20px;
     align-items: center;
     gap: 200px;
+    padding: 10px;
 
 }
 
@@ -40,11 +45,22 @@
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     border-radius: 4px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+   
 }
 .box2{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     border-radius: 4px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
 }
 
 

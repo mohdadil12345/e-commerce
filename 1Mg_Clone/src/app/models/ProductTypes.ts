@@ -9,5 +9,6 @@ price : number = 0
 description : string = ""
 numVotes : string = ""
 rating : number = 0
+discount : number = 0
 
 }

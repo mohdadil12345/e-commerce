@@ -12,13 +12,17 @@
         <p>
           category: <strong>{{ ele.category }}</strong>
         </p>
-        <p>description : {{ ele.description }}</p>
         <p>
           price : <strong>{{ ele.price }}</strong>
         </p>
+      
         <p>
-          votes : <strong>{{ ele.numVotes }}</strong>
+          Discount : <strong>{{ ele.discount }}%</strong>
         </p>
+        <p>
+          Rating : <strong>{{ ele.rating }}</strong>
+        </p>
+ 
         <button (click)="handle_delet(ele.id)">DELETE</button>
         <button>Payment</button>
       </div>

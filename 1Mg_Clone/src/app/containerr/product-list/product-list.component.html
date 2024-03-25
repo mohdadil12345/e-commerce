@@ -1,8 +1,19 @@
 
+<input [(ngModel)]="serchfilter" class="searc_input" (input)="handle_filter()" placeholder="search by title" type="text">
+
+
+<select [(ngModel)]="categ" (change)="filterByCategory()"  class="select_tag" name="category">
+  <option value="">Select By Category</option>
+  <option value="skinCare">skinCare</option>
+  <option value="personalCare">personalCare</option>
+  <option value="nutrition">nutrition</option>
+  <option value="ayurveda">ayurveda</option>
+  <option value="vitamins">vitamins</option>
+</select>
+
+
+
 <div class="container">
-
-
-
   <app-loader *ngIf="loading" ></app-loader>
   
       <app-rod-list-items   *ngFor="let ele of products" [prod] = "ele"  ></app-rod-list-items>
