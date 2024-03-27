@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 
 export class ProdDetailsComponent implements OnInit   {
   
-  api =  "https://e-commerce-backend-crh2.onrender.com/products"
+  api =  "https://fivemg-backend.onrender.com/products"
 
   id : any =  0
   loading : boolean =  true
