@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
@@ -10,7 +11,7 @@ export class LoginPageComponent {
   email : string =  ""
   password : string = ""
 
-  constructor (private  router : Router) {
+  constructor (private  router : Router, private toast : ToastrService) {
     
   }
   
@@ -24,10 +25,11 @@ export class LoginPageComponent {
       let matchdata = lsdata.find((ele) => ele.email == this.email && ele.password == this.password)
 
             if(matchdata){
-              alert("login successfull")
+              this.toast.success("Login successfull")
               this.router.navigate([""])
             }else{
-              alert("wrong credential")
+              this.toast.error("wrong credential")
+
             }
 
     }

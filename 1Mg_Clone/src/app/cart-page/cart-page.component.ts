@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductTypes } from '../models/ProductTypes';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class CartPageComponent {
    cartData : ProductTypes[] = []
 
 
-  constructor() {
+  constructor( private toast : ToastrService) {
     const lsdata = JSON.parse(localStorage.getItem("cart_data") || "[]")
 
      if(lsdata) {
@@ -29,10 +30,13 @@ export class CartPageComponent {
     this.cartData = delfil
     localStorage.setItem("cart_data", JSON.stringify(delfil))
 
-    alert("Item deleted Successfully")
+    this.toast.success("Item deleted Successfully")
+    
 
   }
 
+
+  
 
 
 }

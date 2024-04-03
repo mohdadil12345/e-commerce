@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-signup-page',
   templateUrl: './signup-page.component.html',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class SignupPageComponent {
 
-  constructor (private router : Router) {}
+  constructor (private router : Router,  private toastr: ToastrService) {}
 
   username : string  = "";
   email : string = "";
@@ -23,7 +24,7 @@ export class SignupPageComponent {
   }
 
   if (this.username && this.email && this.password) {
-    alert("Registration Successfull");
+    this.toastr.success("Registration Successfull")
     console.log(user)
 
 
@@ -50,7 +51,8 @@ if(lsdata) {
 
 
   } else {
-    alert("Form not valid");
+    this.toastr.success("Form not valid")
+
   }
 
 

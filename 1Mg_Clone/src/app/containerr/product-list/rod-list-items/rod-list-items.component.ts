@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ProductTypes } from '../../../models/ProductTypes';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-rod-list-items',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RodListItemsComponent {
 
-  constructor(private router : Router) {
+  constructor(private router : Router, private toast : ToastrService) {
 
   }
 
@@ -22,7 +23,9 @@ export class RodListItemsComponent {
 
 
   addtocart(prod: any) {
-    alert("Products added to cart")
+  
+    this.toast.success("Products added to cart")
+
     // console.log(prod)
 
     let lsdata : any =  JSON.parse(localStorage.getItem("cart_data") || '[]')
@@ -43,15 +46,7 @@ export class RodListItemsComponent {
 
 
   goto_details(prod: any){
-    alert("Welcome to Details Page")
-
-    // console.log("jjj", prod)
-
-  //  localStorage.setItem("details_data", JSON.stringify(prod))
-
-
-    // this.router.navigate(['Details/:id'], id)
-    // this.router.navigate(['details/:id', { id: prod.id }]);
+    this.toast.success("Welcome to Details Page")
     this.router.navigate(['/details', prod.id]);
 
 

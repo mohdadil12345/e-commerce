@@ -17,8 +17,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { ToastModule } from 'primeng/toast';
 import { CarouselModule } from 'primeng/carousel';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -43,7 +43,10 @@ import { CarouselModule } from 'primeng/carousel';
     FormsModule,
     HttpClientModule,
     ToastModule,
-    CarouselModule
+    CarouselModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+  
     
    
   ],
